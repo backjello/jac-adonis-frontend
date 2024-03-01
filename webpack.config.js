@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
 
-let htmlPageNames = ['home', 'register', 'login', 'profile', 'periodicals'];
+let htmlPageNames = ['home', 'register', 'login', 'profile', 'periodicals', 'search'];
 const entry = {}
 let multipleHtmlPlugins = htmlPageNames.map(name => {
     entry[name] = `./src/pages/${name}/${name}.ts`
