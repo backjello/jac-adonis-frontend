@@ -27,6 +27,9 @@ export class Apiservice {
         return this.instance.get(url)
     }
 
+    public async delete(url: string, id: number | string) {
+        return this.instance.delete(url + "/" + id)
+    }
 
 
 
